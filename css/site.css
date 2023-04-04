@@ -1,77 +1,156 @@
 :root {
-    /* fonts */
-    --kw-title-font: 'Bebas Neue', sans-serif;
-    --kw-subtitle-font: 'Fira Sans', sans-serif;
-    --kw-heading-font: 'Bebas Neue', sans-serif;
-    --kw-body-font: 'Roboto', sans-serif;
+  /* fonts */
+  --kw-title-font: "Bebas Neue", sans-serif;
+  --kw-subtitle-font: "Fira Sans", sans-serif;
+  --kw-heading-font: "Bebas Neue", sans-serif;
+  --kw-body-font: "Roboto", sans-serif;
 
-    /* colors */
-    --kw-primary-color: rgb(145, 203, 251);
-    --kw-secondary-color: rgb(66, 148, 186);
-    --kw-highlight-color: rgb(250, 225, 120);
-    --kw-dark-color: #212121;
-    --kw-light-color: #deeefb;
-    --kw-background-color: rgba(250, 250, 250, .8);
-        /* 4th value of rgba is the opacity from 0-1 (complete transparent to complete opaque (1) */
+  /* colors */
+  --kw-primary-color: rgb(145, 203, 251);
+  --kw-secondary-color: rgb(66, 148, 186);
+  --kw-highlight-color: rgb(250, 225, 120);
+  --kw-dark-color: #212121;
+  --kw-light-color: #deeefb;
+  --kw-background-color: rgba(250, 250, 250, 0.8);
+  /* 4th value of rgba is the opacity from 0-1 (complete transparent to complete opaque (1) */
 
-    /* nav car colors */
-    --kw-nav-bg-color: rgb(33, 33, 33, .8);
-    --kw-nav-toggler-color: var(--cf-highlight-color);
-    --kw-nav-toggler-glow: rgba(250, 225, 120, .55);
+  /* nav Bar colors */
+  --kw-nav-bg-color: rgba(33, 33, 33, 0.8);
+  --kw-nav-toggler-color: var(--cf-highlight-color);
+  --kw-nav-toggler-glow: rgba(250, 225, 120, 0.55);
 
-    /* form colors */
-    --kw-formfocus-border-color: var(--kw-secondary-color);
-    --kw-formfocus-shadow: var(--kw-primary-color);
-    --kw-form-background-color: var(--kw-background-color);
+  /* form colors */
+  --kw-formfocus-border-color: var(--kw-secondary-color);
+  --kw-formfocus-shadow: var(--kw-primary-color);
+  --kw-form-background-color: var(--kw-background-color);
 
-    /* text styles */
-    --kw-title-color: var(--kw-dark-color);
-    --kw-font-size: 1.2rem;
-    --kw-font-weight: 400;
-    --kw-line-height: 1.5rem;
+  /* text styles */
+  --kw-title-color: var(--kw-dark-color);
+  --kw-font-size: 1.2rem;
+  --kw-font-weight: 400;
+  --kw-line-height: 1.5rem;
 }
 
-
-/* font-family: 'Allan', sans-serif;
-font-family: 'Bebas Neue', sans-serif;
+/* font-family: 'Allan', cursive;
+font-family: 'Bebas Neue', cursive;
 font-family: 'Fira Sans', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 html,
 body {
-    height: 100%;
-    /* height is height of browser screen */
+  height: 100%;
+  /* height is height of browser screen */
 }
 
-body{
-    display: flex;  
-    /* Bootstrap class = d-flex */
-    flex-direction:column; 
-    /* Bootstrap class = flex-column */
+/* START STICKY FOOTER */
+body {
+  display: flex;
+  /* Bootstrap class = d-flex */
+  flex-direction: column;
+  /* Bootstrap class = flex-column */
 
-    font-family: var(--kw-dark-color);
-    font-size: var(--kw-font-size);
-    font-weight: var(--kw-font-weight);
-    line-height: var(--kw-line-height);
-    color: var(--kw-dark-color);
-    background: var(--kw-background-color);
+  font-family: var(--kw-dark-color);
+  font-size: var(--kw-font-size);
+  font-weight: var(--kw-font-weight);
+  line-height: var(--kw-line-height);
+  color: var(--kw-dark-color);
+  background: var(--kw-background-color);
 }
 
-main{
-    flex-grow: 1;
+main {
+  flex-grow: 1;
 }
 
 footer {
-    /* this will make footer tag at bottom of page no matter what */
-    flex-shrink: 0;
+  /* this will make footer tag at bottom of page no matter what */
+  flex-shrink: 0;
+}
+/* END STICKY FOOTER */
+
+/* START MAIN HEADER */
+.mainLogo {
+  height: 0.6em;
 }
 
+.mainHeader {
+  margin-top: 76px;
+  height: 200px;
+  background-image: url(/img/DevPortFolioBG_576.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--kw-light-color);
+}
+
+.mainTitle, 
+.subTitle {
+    color: var(--kw-dark-color);
+
+}
+
+.mainTitle {
+    font-family: var(--kw-title-font);
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+.subTitle {
+    font-family: var(--kw-subtitle-font);
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.09rem;
+}
+
+.mainHeader-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mainHeader-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/* END MAIN HEADER */
+
+
+/* START FOOTER */
 .socialicons {
-    font-size: 2rem;
-    color: var(--kw-secondary-color);
-    transition: color 0.25s;
+  font-size: 2rem;
+  color: var(--kw-secondary-color);
+  transition: color 0.25s;
 }
 
 .socialicons:hover {
-        color: var(--kw-highlight-color);
+  color: var(--kw-highlight-color);
+}
+/* END FOOTER */
+
+
+
+/************MEDIA QUERIES*************/
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    
 }
