@@ -1,0 +1,77 @@
+:root {
+    /* fonts */
+    --kw-title-font: 'Bebas Neue', sans-serif;
+    --kw-subtitle-font: 'Fira Sans', sans-serif;
+    --kw-heading-font: 'Bebas Neue', sans-serif;
+    --kw-body-font: 'Roboto', sans-serif;
+
+    /* colors */
+    --kw-primary-color: rgb(145, 203, 251);
+    --kw-secondary-color: rgb(66, 148, 186);
+    --kw-highlight-color: rgb(250, 225, 120);
+    --kw-dark-color: #212121;
+    --kw-light-color: #deeefb;
+    --kw-background-color: rgba(250, 250, 250, .8);
+        /* 4th value of rgba is the opacity from 0-1 (complete transparent to complete opaque (1) */
+
+    /* nav car colors */
+    --kw-nav-bg-color: rgb(33, 33, 33, .8);
+    --kw-nav-toggler-color: var(--cf-highlight-color);
+    --kw-nav-toggler-glow: rgba(250, 225, 120, .55);
+
+    /* form colors */
+    --kw-formfocus-border-color: var(--kw-secondary-color);
+    --kw-formfocus-shadow: var(--kw-primary-color);
+    --kw-form-background-color: var(--kw-background-color);
+
+    /* text styles */
+    --kw-title-color: var(--kw-dark-color);
+    --kw-font-size: 1.2rem;
+    --kw-font-weight: 400;
+    --kw-line-height: 1.5rem;
+}
+
+
+/* font-family: 'Allan', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+html,
+body {
+    height: 100%;
+    /* height is height of browser screen */
+}
+
+body{
+    display: flex;  
+    /* Bootstrap class = d-flex */
+    flex-direction:column; 
+    /* Bootstrap class = flex-column */
+
+    font-family: var(--kw-dark-color);
+    font-size: var(--kw-font-size);
+    font-weight: var(--kw-font-weight);
+    line-height: var(--kw-line-height);
+    color: var(--kw-dark-color);
+    background: var(--kw-background-color);
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer {
+    /* this will make footer tag at bottom of page no matter what */
+    flex-shrink: 0;
+}
+
+.socialicons {
+    font-size: 2rem;
+    color: var(--kw-secondary-color);
+    transition: color 0.25s;
+}
+
+.socialicons:hover {
+        color: var(--kw-highlight-color);
+}
