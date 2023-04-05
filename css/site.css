@@ -185,6 +185,14 @@ h1, .h1 {
     padding-bottom: 5rem;
 }
 
+.section-page:nth-child(even) {
+    background-color: var(--kw-light-color) ;
+}
+
+.section-page:nth-child(odd) {
+    background-color: var(--kw-primary-color);
+}
+
 /* END MAIN ELEMENTS */
 
 
