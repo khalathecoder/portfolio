@@ -67,6 +67,27 @@ footer {
 }
 /* END STICKY FOOTER */
 
+/* Element Overrides */
+section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h6, .h6,
+h5, .h5,
+h4, .h4,
+h3, .h3,
+h2, .h2, 
+h1, .h1 {
+    font-family: var(--kw-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--kw-title-color);
+    letter-spacing: .1rem;
+}
+
+
+
 /* START NAVBAR */
 .navbar-toggler-kw {
     color: var(--kw-toggler-color);
@@ -157,6 +178,14 @@ footer {
     --bs-btn-hover-color: var(--kw-dark-color);
     transition: color 0.25s;
 }
+
+/* BEGIN MAIN ELEMENTS */
+.section-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* END MAIN ELEMENTS */
 
 
 /* START FOOTER */
