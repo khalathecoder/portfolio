@@ -8,15 +8,15 @@
   /* colors */
   --kw-primary-color: rgb(145, 203, 251);
   --kw-secondary-color: rgb(66, 148, 186);
-  --kw-highlight-color: rgb(250, 225, 120);
+  --kw-highlight-color: rgb(236, 205, 78);
   --kw-dark-color: #212121;
   --kw-light-color: #deeefb;
   --kw-background-color: rgba(250, 250, 250, 0.8);
   /* 4th value of rgba is the opacity from 0-1 (complete transparent to complete opaque (1) */
 
   /* nav Bar colors */
-  --kw-nav-bg-color: rgba(33, 33, 33, 0.8);
-  --kw-nav-toggler-color: var(--cf-highlight-color);
+  --kw-nav-bg-color: var(--kw-dark-color);
+  --kw-nav-toggler-color: var(--kw-highlight-color);
   --kw-nav-toggler-glow: rgba(250, 225, 120, 0.55);
 
   /* form colors */
@@ -49,7 +49,7 @@ body {
   flex-direction: column;
   /* Bootstrap class = flex-column */
 
-  font-family: var(--kw-dark-color);
+  font-family: var(--kw-body-font);
   font-size: var(--kw-font-size);
   font-weight: var(--kw-font-weight);
   line-height: var(--kw-line-height);
@@ -67,6 +67,23 @@ footer {
 }
 /* END STICKY FOOTER */
 
+/* START NAVBAR */
+.navbar-toggler-kw {
+    color: var(--kw-toggler-color);
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    color: var(--kw-nav-toggler-glow);
+    border-color: var(--kw-nav-toggler-color);
+}
+
+#mainNav {
+    background: var(--kw-nav-bg-color);
+}
+
+/* END NAVBAR */
+
 /* START MAIN HEADER */
 .mainLogo {
   height: 0.6em;
@@ -79,6 +96,24 @@ footer {
   background-repeat: no-repeat;
   background-position: right top;
   background-color: var(--kw-light-color);
+}
+
+.mainHeader-cover {
+    margin-top: 76px;
+    height: 460px;
+    background-image: url(/img/cityBG_2560.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.mainHeader-cover > .mainHeader-content {
+/* > means immediate child, if its nested beyond that it wont be affected; when omitted it can affect any nested content inside*/
+    backdrop-filter: blur(2px) brightness(90%)
+}
+
+.mainHeader-cover .mainTitle,
+.mainHeader-cover .subTitle {
+    color: var(--kw-light-color)
 }
 
 .mainTitle, 
@@ -114,15 +149,29 @@ footer {
 /* END MAIN HEADER */
 
 
+.btn-primary {
+    --bs-btn-bg: var(--kw-secondary-color);
+    --bs-btn-border-color: var(--kw-secondary-color);
+    --bs-btn-hover-bg: var(--kw-highlight-color);
+    --bs-btn-hover-border-color: var(--kw-highlight-color);
+    --bs-btn-hover-color: var(--kw-dark-color);
+    transition: color 0.25s;
+}
+
+
 /* START FOOTER */
 .socialicons {
   font-size: 2rem;
   color: var(--kw-secondary-color);
-  transition: color 0.25s;
+  transition: color 0.5s;
 }
 
 .socialicons:hover {
   color: var(--kw-highlight-color);
+}
+
+footer{
+    background: var(--kw-nav-bg-color);
 }
 /* END FOOTER */
 
@@ -132,25 +181,79 @@ footer {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    .mainHeader{
+        background-image: url(/img/DevPortFolioBG_767.png);
+    }
 
+    .mainTitle {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .mainHeader {
+        background-image: url(/img/DevPortFolioBG_992.png);
+        height: 300px;
+    }
+    .mainTitle {
+        font-size: .5rem;
+        line-height: 3.5rem;
+    }
 
+    .subTitle {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+    .mainHeader{
+        height: 400px;
+        background-image: url(/img/DevPortFolioBG_1200.png);
+    }
 }
+    .mainTitle {
+        font-size: 4.5rem;
+        line-height: 3.5rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    
+    .mainHeader{
+        height: 500px;
+        background-image: url(/img/DevPortFolioBG_2560.png);
+    }
+
+    .mainTitle {
+        font-size: 6.5rem;
+        line-height: 5rem;
+        letter-spacing: .1rem;
+    }
+
+    .subTitle {
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+    }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    
+ 
+    /* not used currently */
+
 }
+
+/************ END MEDIA QUERIES*************/
