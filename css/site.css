@@ -207,6 +207,33 @@ h1, .h1 {
     font-size: 4rem;
 }
 
+.section-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--kw-dark-color);
+    color: var(--kw-light-color);
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+.section-cta span {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.cta-arrow {
+    color: var(--kw-highlight-color);
+    font-size: 2rem;
+    transition: .4s;
+}
+
+.cta-arrow:hover {
+    filter: brightness(1.2);
+}
 
 /* START FOOTER */
 .socialicons {
@@ -260,6 +287,14 @@ footer{
         font-size: 1.2rem;
         letter-spacing: .1rem;
     }
+
+    .section-cta {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .cta-arrow {
+        font-size: 2.5rem;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -295,6 +330,15 @@ footer{
     .subTitle {
         font-size: 1.5rem;
         letter-spacing: .1rem;
+    }
+
+    .section-cta {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 300;
+    }
+    .cta-arrow {
+        font-size: 3.5rem;
     }
 }
 
