@@ -40,3 +40,15 @@
 .blog-day {
     font-size: 6rem;
 }
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
+.blog-article:nth-child(odd)>.blog-row {
+    flex-direction: row-reverse;
+}
