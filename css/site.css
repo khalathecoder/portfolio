@@ -292,6 +292,7 @@ h1, .h1 {
 @media (min-width: 576px) {
     .mainHeader{
         background-image: url(/img/DevPortFolioBG_767.png);
+        height: 300px;
     }
 
     .mainTitle {
@@ -336,7 +337,6 @@ h1, .h1 {
         height: 400px;
         background-image: url(/img/DevPortFolioBG_1200.png);
     }
-}
     .mainTitle {
         font-size: 4.5rem;
         line-height: 3.5rem;
@@ -346,6 +346,7 @@ h1, .h1 {
         font-size: 1.2rem;
         letter-spacing: .1rem;
     }
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
