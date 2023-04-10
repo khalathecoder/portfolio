@@ -254,9 +254,34 @@ h1, .h1 {
   color: var(--kw-highlight-color);
 }
 
-footer{
+/* footer{
     background: var(--kw-nav-bg-color);
+} */
+
+.footer-cta {
+    background-color: var(--kw-secondary-color);
+    border-radius: 10px;
+    width: 75%;
 }
+
+.footer-message {
+    color: var(--kw-dark-color);
+    letter-spacing: .1rem;
+}
+
+.footer-bg-cta {
+    background: linear-gradient(to bottom,
+    var(--kw-background-color) 0%,
+    var(--kw-background-color) 50%,
+    var(--kw-dark-color) 50%, 
+    var(--kw-dark-color) 100%);
+    
+}
+
+.footer-main {
+    background-color: var(--kw-dark-color);
+}
+
 /* END FOOTER */
 
 
