@@ -193,6 +193,14 @@ h1, .h1 {
     background-color: var(--kw-primary-color);
 }
 
+.section-page:nth-last-child(2) {
+    background-color: var(--kw-primary-color);
+}
+
+.section-page:last-child {
+    background-color: var(--kw-light-color);
+}
+
 .profilePic {
     border-radius: 20px;
     border-style: solid;
