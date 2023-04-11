@@ -6,11 +6,11 @@
   --kw-body-font: "Roboto", sans-serif;
 
   /* colors */
-  --kw-primary-color: #9dbeab;
+  --kw-primary-color: #aeb9b3;
   --kw-secondary-color: #FAC539;
   --kw-highlight-color: #2DE2FA;
   --kw-dark-color: #212121;
-  --kw-light-color: #738ad6;
+  --kw-light-color: #87d6d0;
   --kw-background-color: rgba(250, 250, 250, 0.8);
   /* 4th value of rgba is the opacity from 0-1 (complete transparent to complete opaque (1) */
 
