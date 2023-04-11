@@ -6,11 +6,11 @@
   --kw-body-font: "Roboto", sans-serif;
 
   /* colors */
-  --kw-primary-color: rgb(145, 203, 251);
-  --kw-secondary-color: rgb(66, 148, 186);
-  --kw-highlight-color: rgb(236, 205, 78);
+  --kw-primary-color: #9dbeab;
+  --kw-secondary-color: #FAC539;
+  --kw-highlight-color: #2DE2FA;
   --kw-dark-color: #212121;
-  --kw-light-color: #deeefb;
+  --kw-light-color: #738ad6;
   --kw-background-color: rgba(250, 250, 250, 0.8);
   /* 4th value of rgba is the opacity from 0-1 (complete transparent to complete opaque (1) */
 
@@ -312,6 +312,7 @@ h1, .h1 {
         background-image: url(/img/DevPortFolioBG_992.png);
         height: 300px;
     }
+    
     .mainTitle {
         font-size: .55rem;
         line-height: 2.5rem;
