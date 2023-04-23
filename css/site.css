@@ -6,11 +6,11 @@
   --kw-body-font: "Roboto", sans-serif;
 
   /* colors */
-  --kw-primary-color: #aeb9b3;
+  --kw-primary-color: #aeb9b3b6;
   --kw-secondary-color: #FAC539;
   --kw-highlight-color: #2DE2FA;
   --kw-dark-color: #212121;
-  --kw-light-color: #87d6d0;
+  --kw-light-color: #67d4cbb0;
   --kw-background-color: rgba(250, 250, 250, 0.8);
   /* 4th value of rgba is the opacity from 0-1 (complete transparent to complete opaque (1) */
 
@@ -187,22 +187,21 @@ h1, .h1 {
 
 .section-page:nth-child(even) {
     background-color: var(--kw-light-color) ;
-    opacity: 0.7;
+    
 }
 
 .section-page:nth-child(odd) {
     background-color: var(--kw-primary-color);
-    opacity: 0.7;
 }
 
 .section-page:nth-last-child(2) {
     background-color: var(--kw-primary-color);
-    opacity: 0.7;
+    
 }
 
 .section-page:last-child {
     background-color: var(--kw-light-color);
-    opacity: 0.7;
+    
 }
 
 .profilePic {
