@@ -187,18 +187,22 @@ h1, .h1 {
 
 .section-page:nth-child(even) {
     background-color: var(--kw-light-color) ;
+    opacity: 0.7;
 }
 
 .section-page:nth-child(odd) {
     background-color: var(--kw-primary-color);
+    opacity: 0.7;
 }
 
 .section-page:nth-last-child(2) {
     background-color: var(--kw-primary-color);
+    opacity: 0.7;
 }
 
 .section-page:last-child {
     background-color: var(--kw-light-color);
+    opacity: 0.7;
 }
 
 .profilePic {
@@ -284,7 +288,15 @@ h1, .h1 {
 
 /* END FOOTER */
 
-
+.bgImage{
+    width: 100%;
+    background: linear-gradient(rgba(202, 200, 200, 0.7), rgba(180, 174, 174, 0.7)), url(/img/pexels-shonejai-2657636.jpg); 
+        /* rgba is transparency as opposed to rgb which is color*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
 
 /************MEDIA QUERIES*************/
 
