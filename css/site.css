@@ -274,8 +274,8 @@ h1, .h1 {
 
 .footer-bg-cta {
     background: linear-gradient(to bottom,
-    var(--kw-background-color) 0%,
-    var(--kw-background-color) 50%,
+    var(--kw-dark-color) 0%,
+    var(--kw-dark-color) 50%,
     var(--kw-dark-color) 50%, 
     var(--kw-dark-color) 100%);
     
