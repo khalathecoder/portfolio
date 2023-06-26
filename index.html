@@ -1,367 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=0"
+    />
     <title>Khala Wright - Software Developer</title>
 
-<!-- Bootstrap CSS - stylesheets always go in head tag-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Bootstrap CSS - stylesheets always go in head tag-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
 
-<!-- GOOGLE FONTS -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- DEVICON -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- DEVICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
 
-<!-- BOOTSTRAP icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- BOOTSTRAP icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="/css/hoverCard.css"/>
-<link rel="stylesheet" href="/css/blogCard.css"/>
-<link rel="stylesheet" href="/css/site.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hoverCard.css" />
+    <link rel="stylesheet" href="/css/blogCard.css" />
+    <link rel="stylesheet" href="/css/site.css" />
 
-<!-- FAVICON - log next to title -->
-<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
-</head>
+    <!-- FAVICON - log next to title -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
 
-<body data-bs-spy="scroll" data-bs-target="#mainNav" class="bgImage">
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" class="bgImage">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container-xxl">
-            <a class="navbar-brand" href="#">
-             <img src="/img/kw-logo-white.png" height="50"/> 
-            </a>
-            <!-- TO DO: CUSTOMIZE MOBILE MENU -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-kw">
-                    <i class="bi bi-list"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                     <a class="nav-link" href="#challenges">Challenges</a>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-link" href="#blog">Blog</a>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-link" href="#contact">Contact</a>
-                 </li>
-                </ul>
-            </div>
+      <div class="container-xxl">
+        <a class="navbar-brand" href="#">
+          <img src="/img/kw-logo-white.png" height="50" />
+        </a>
+        <!-- TO DO: CUSTOMIZE MOBILE MENU -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-kw">
+            <i class="bi bi-list"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#challenges">Challenges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- END NAVBAR -->
 
     <header id="home" class="container-xxl">
-        <div class="mainHeader">
-            <div class="mainHeader-content">
-                <div class="mainHeader-wrapper">
-                    <div class="mainTitle">
-                        <span>KHALA</span>
-                        <span>
-                            <img class="mainLogo" src="/img/kw-mark.png"/>
-                        </span>
-                    </div>
-                        <div class="mainTitle">WRIGHT</div>
-                        <div class="subTitle">SOFTWARE DEVELOPER</div>
-                        <a href="#contact" class="btn btn-primary mt-3"> Let's Chat!</a>
-                </div>
+      <div class="mainHeader">
+        <div class="mainHeader-content">
+          <div class="mainHeader-wrapper">
+            <div class="mainTitle">
+              <span>KHALA</span>
+              <span>
+                <img class="mainLogo" src="/img/kw-mark.png" />
+              </span>
             </div>
+            <div class="mainTitle">WRIGHT</div>
+            <div class="subTitle">SOFTWARE DEVELOPER</div>
+            <a href="#contact" class="btn btn-primary mt-3"> Let's Chat!</a>
+          </div>
         </div>
+      </div>
     </header>
 
-    <main class="container-xxl"> 
-        <!-- ABOUT SECTION -->
-        <section class="section-page" id="about">
-            <h2> About Me</h2>
-            <div class="row g-3">
-                <div class="col-12 col-lg-4">
-                    <picture>
-                        <source media="(min-width: 992px)" srcset="/img/1678743642621.jpg" />
-                        <source media="(min-width: 768px)" srcset="/img/1678743642621.jpg" />
-                        <source media="(min-width: 576px)" srcset="/img/1678743642621.jpg" />
-                        <img src="/img/1678743642621.jpg" class="img-fluid profilePic"/>
-                    </picture>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <h3> Welcome to my portfolio website! My Name is Khala Wright, and I am a Full-Stack Web Developer.</h3>
-                    <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium est accusantium similique, exercitationem sunt mollitia commodi molestiae quia non veniam nesciunt recusandae doloribus quis. Iure, necessitatibus aut provident eveniet expedita quo molestiae possimus temporibus, architecto quod laborum omnis iste nulla aliquid adipisci tempore amet fuga earum? Quam libero enim cum, iusto similique necessitatibus sit sunt laboriosam expedita accusamus aspernatur ab ipsam consectetur vitae soluta dignissimos dolorem facilis accusantium!
-                    <div class="row row-cols-1 row-cols-lg-2">
-                        <div class="col"> Name: Khala Wright</div>
-                        <div class="col"> Email: <a href="mailto:info@khalawright.com">info@khalawright.com</a>
-                        </div>
-                        <div class="col"> From: Florida, US</div>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3">Download Resume</a>
-                </div>
-            </div>
-        </section>
-        <!-- SKILLS -->
-        <section class="section-page" id="skills">
-            <h2>What I Use</h2>
-            <p> 
-                I am a creative problem solver. I build full-stack web applications. I use C#, ASP.NET, JavaScript, Bootstrap, HTML, and CSS. I have highlighted my key technical skills that I will bring to your project. Check out some of my <a href="#projects"> fulll-stack projects</a> below!
-            </p>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
-                <div class="col">
-                    <i class="devicon-csharp-plain colored"></i>
-                    <p> 
-                        I use C# on a daily basis to build full-stack web applications. You can see examples of my work implementing C# in my projects sections.
-                    </p>
-                </div>
-                <div class="col">
-                    <i class="devicon-dotnetcore-plain colored"></i>
-                    <p>
-                        I use proven design patterns and frameworks to build websites. ASP.NET Core Web and MVC fits the bill for most projects. Visit my projects to see examples.
-                    </p>
-                </div>
-                <div class="col">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <p>
-                        Javascript is the language of the web. I use vanilla js and I am comfortable with many js frameworks. Check out my <a href="challenges">smaller projects</a> section for some js projects.
-                    </p>
-                </div>
-                <div class="col">
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-bootstrap-plain colored"></i>
-                    <p>
-                        I use HTML, CSS, and Bootstrap to build beautiful responsive websites. Bootstrap is my go to CSS framework. Many shy away from front-end, but I embrace it!
-                    </p>
-                </div>
-                <div class="col">
-                    <i class="devicon-git-plain colored"></i>
-                    <i class="devicon-github-original colored"></i>
-                    <p>
-                        I use git and github for all my projects. Git is the most used source control framework in the world. I also employ CI/CD for publishing.
-                    </p>
-                </div>
-                <div class="col">
-                    <i class="devicon-postgresql-plain-wordmark colored"></i>
-                    <p>
-                        SQL is the language of the database. My projects all utilize a database. I have used Postgres on all of them. I can write SQL on any DB platform.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- BIG PROJECTS -->
-        <section class="section-page" id="projects">
-            <h2>Projects I Have Built</h2>
+    <main class="container-xxl">
+      <!-- ABOUT SECTION -->
+      <section class="section-page" id="about">
+        <h2>About Me</h2>
+        <div class="row g-3">
+          <div class="col-12 col-lg-4">
+            <picture>
+              <source
+                media="(min-width: 992px)"
+                srcset="/img/1678743642621.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/img/1678743642621.jpg"
+              />
+              <source
+                media="(min-width: 576px)"
+                srcset="/img/1678743642621.jpg"
+              />
+              <img src="/img/1678743642621.jpg" class="img-fluid profilePic" />
+            </picture>
+          </div>
+          <div class="col-12 col-lg-8">
+            <h3>
+              Welcome to my portfolio website! My Name is Khala Wright, and I am
+              a Full-Stack Web Developer.
+            </h3>
             <p>
-                Showcasing complete functional projects demonstrates what I can bring to your project. I built these projects from the ground up to demonstrate my skillset with front-end, back-end, security, and database developmenet. All of these projects are full-stack web projects that are published so that you can demo them easily. 
-                <a href="#contact"> Contact me</a> to get a complete code walk through.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium est accusantium similique, exercitationem sunt
+              mollitia commodi molestiae quia non veniam nesciunt recusandae
+              doloribus quis. Iure, necessitatibus aut provident eveniet
+              expedita quo molestiae possimus temporibus, architecto quod
+              laborum omnis iste nulla aliquid adipisci tempore amet fuga earum?
+              Quam libero enim cum, iusto similique necessitatibus sit sunt
+              laboriosam expedita accusamus aspernatur ab ipsam consectetur
+              vitae soluta dignissimos dolorem facilis accusantium!
             </p>
-        <div class="row row-cols-1 row-cols-md-3 g-5">
-            <div class="col">
-                <div class="hc-wrapper">
-                    <div class="hc-card">
-                        <picture>
-                            <source srcset="/img/logos/Bugtracker_600.jpg" media="(min-width: 992px)" />
-                            <img src="/img/logos/BugTracker_200.jpg" />
-                        </picture>
-                        <div class="hc-content">
-                            <p> 
-                                <!-- make short and sweet -->
-                                A full stack bug tracker app built with ASP.NET MVC, C#, and SQL.
-                            </p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectOneModal">Learn More</button>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="row row-cols-1 row-cols-lg-2">
+              <div class="col">Name: Khala Wright</div>
+              <div class="col">
+                Email:
+                <a href="mailto:info@khalawright.com">info@khalawright.com</a>
+              </div>
+              <div class="col">From: Florida, US</div>
             </div>
-            <div class="col">
-                <div class="hc-wrapper">
-                    <div class="hc-card">
-                        <picture>
-                            <source srcset="/img/logos/ExpenseTracker_600.jpg" media="(min-width: 992px)" />
-                            <img src="/img/logos/ExpenseTracker_200.jpg" />
-                        </picture>
-                        <div class="hc-content">
-                            <p> 
-                                <!-- make short and sweet -->
-                                A full stack expense tracker app built with ASP.NET MVC, C#, and SQL.
-                            </p>
-                            <button ty="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectTwoModal">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="hc-wrapper">
-                    <div class="hc-card">
-                        <picture>
-                            <source srcset="/img/logos/Blog_600.jpg" media="(min-width: 992px)" />
-                            <img src="/img/logos/Blog_200.jpg" />
-                        </picture>
-                        <div class="hc-content">
-                            <p> 
-                                <!-- make short and sweet -->
-                                A blog built with HTML, CSS and Bootstrap.
-                            </p>
-                            <button ty="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectThreeModal">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href="#" class="btn btn-primary mt-3">Download Resume</a>
+          </div>
         </div>
-        </section>
-        <section class="section-page" id="challenges">
-            <h2>Smaller Projects</h2>
+      </section>
+      <!-- SKILLS -->
+      <section class="section-page" id="skills">
+        <h2>What I Use</h2>
+        <p>
+          I am a creative problem solver. I build full-stack web applications. I
+          use C#, ASP.NET, JavaScript, Bootstrap, HTML, and CSS. I have
+          highlighted my key technical skills that I will bring to your project.
+          Check out some of my
+          <a href="#projects"> full-stack projects</a> below!
+        </p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
+          <div class="col">
+            <i class="devicon-csharp-plain colored"></i>
             <p>
-                Coding challenges are smaller in scope and scale than my full-stack  projects. These problems are fun to solve and also show case some UI skills and front-end dev skills with javascript. All the projects are published so you can easily see my work in action. Contact me if you would like to discuss any of my work.
+              I use C# on a daily basis to build full-stack web applications.
+              You can see examples of my work implementing C# in my projects
+              sections.
             </p>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
-                <div class="col">
-                    <!-- HUNDO -->
-                    <div class="hc-wrapper">
-                        <div class="hc-card">
-                            <picture>
-                                <source srcset="/img/hundo-logo_200.png" media="(min-width: 992px)" />
-                                <img src="/img/hundo-logo_200.png" />
-                            </picture>
-                            <div class="hc-content">
-                                <p> 
-                                    <!-- make short and sweet -->
-                                    Created a 0 to 100 generator using Javascript.
-                                </p>
-                                <a href="https://kw-hundo.netlify.app" class="btn btn-primary mt-3" target="_blank">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="col">
+            <i class="devicon-dotnetcore-plain colored"></i>
+            <p>
+              I use proven design patterns and frameworks to build websites.
+              ASP.NET Core Web and MVC fits the bill for most projects. Visit my
+              projects to see examples.
+            </p>
+          </div>
+          <div class="col">
+            <i class="devicon-javascript-plain colored"></i>
+            <p>
+              Javascript is the language of the web. I use vanilla js and I am
+              comfortable with many js frameworks. Check out my
+              <a href="challenges">smaller projects</a> section for some js
+              projects.
+            </p>
+          </div>
+          <div class="col">
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>
+            <p>
+              I use HTML, CSS, and Bootstrap to build beautiful responsive
+              websites. Bootstrap is my go to CSS framework. Many shy away from
+              front-end, but I embrace it!
+            </p>
+          </div>
+          <div class="col">
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-github-original colored"></i>
+            <p>
+              I use git and github for all my projects. Git is the most used
+              source control framework in the world. I also employ CI/CD for
+              publishing.
+            </p>
+          </div>
+          <div class="col">
+            <i class="devicon-postgresql-plain-wordmark colored"></i>
+            <p>
+              SQL is the language of the database. My projects all utilize a
+              database. I have used Postgres on all of them. I can write SQL on
+              any DB platform.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- BIG PROJECTS -->
+      <section class="section-page" id="projects">
+        <h2>Projects I Have Built</h2>
+        <p>
+          Showcasing complete functional projects demonstrates what I can bring
+          to your project. I built these projects from the ground up to
+          demonstrate my skillset with front-end, back-end, security, and
+          database development. All of these projects are full-stack web
+          projects that are published so that you can demo them easily.
+          <a href="#contact"> Contact me</a> to get a complete code walk
+          through.
+        </p>
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+          <div class="col">
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/trackerboss.png"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/trackerboss.png" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    <!-- make short and sweet -->
+                    A role-based, full stack bug tracker app built with ASP.NET
+                    MVC, C#, and SQL.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectOneModal"
+                  >
+                    Learn More
+                  </button>
                 </div>
-                <div class="col">
-                    <!-- FIZZBUZZ -->
-                    <div class="hc-wrapper">
-                        <div class="hc-card">
-                            <picture>
-                                <source srcset="/img/Yellow Minimalist Honey Bee Logo (200 × 200 px).png" media="(min-width: 992px)" />
-                                <img src="/img/Yellow Minimalist Honey Bee Logo (400 × 400 px).png" />
-                            </picture>
-                            <div class="hc-content">
-                                <p> 
-                                    <!-- make short and sweet -->
-                                    Created the classic FizzBuzz challenge using Javascript.
-                                </p>
-                                <a href="https://kw-fizzbuzz.netlify.app" class="btn btn-primary mt-3" target="_blank">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <!-- REWIND -->
-                    <div class="hc-wrapper">
-                        <div class="hc-card">
-                            <picture>
-                                <source srcset="/img/rewind 200 x 200.png" media="(min-width: 992px)" />
-                                <img src="/img/rewind (400 × 400 px).png" />
-                            </picture>
-                            <div class="hc-content">
-                                <p> 
-                                    <!-- make short and sweet -->
-                                    Using Javascript, I created reverse-a-string generator with a "For" loop.
-                                </p>
-                                <a href="https://kw-rewind.netlify.app" class="btn btn-primary mt-3" target="_blank">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <!-- TOPSPOT PALINDROME -->
-                    <div class="hc-wrapper">
-                        <div class="hc-card">
-                            <picture>
-                                <source srcset="/img/topspot 200 x 200.png" media="(min-width: 992px)" />
-                                <img src="/img/topspot 400 x 400.png" />
-                            </picture>
-                            <div class="hc-content">
-                                <p> 
-                                    <!-- make short and sweet -->
-                                    Using Javascript, I created a palindrome checker.
-                                </p>
-                                <a href="https://kw-topspot.netlify.app" class="btn btn-primary mt-3" target="_blank">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <!-- SUPERSTAR EVENTS -->
-                    <div class="hc-wrapper">
-                        <div class="hc-card">
-                            <picture>
-                                <source srcset="/img/kwsuperstarevents (200 × 200 px).png" media="(min-width: 992px)" />
-                                <img src="/img/kwsuperstarevents (400 × 400 px).png" />
-                            </picture>
-                            <div class="hc-content">
-                                <p> 
-                                    <!-- make short and sweet -->
-                                    Created an events tracker using Javascript that includes saving into your storage.
-                                </p>
-                                <a href="https://kw-superstarevents.netlify.app" class="btn btn-primary mt-3" target="_blank">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <!-- MORTGAGE CALCULATOR -->
-                    <div class="hc-wrapper">
-                        <div class="hc-card">
-                            <picture>
-                                <source srcset="/img/mortgageloancalc (200 × 200 px).png" media="(min-width: 992px)" />
-                                <img src="/img/mortgageloancalc (400 × 400 px).png" />
-                            </picture>
-                            <div class="hc-content">
-                                <p> 
-                                    <!-- make short and sweet -->
-                                    Using Javascript, I created a mortgage loan calculator.
-                                </p>
-                                <a href="https://kw-mortgagecalculator.netlify.app" class="btn btn-primary mt-3" target="_blank">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- CALL TO ACTION -->
-        <section class="section-cta">
-            <a href="#" class="cta-arrow">
-                <i class="bi bi-arrow-right-square-fill"></i>
-            </a>
-            <span>
-                Want to see what I've been working on recently?<br/>
-                Check out my <a href="#">bug tracker</a>!
-            </span>
-            <a href="#" class="cta-arrow">
-                <i class="bi bi-arrow-left-square-fill"></i></a>
-        </section>
-        <section class="section-page" id="blog">
-            <h2>Check Out My Blog</h2>
-            <p> 
-                I write on my blog on a regular basis. I think it is important to share your knowledge with others.
-            </p>
-            <div id="blogs">
-                <article class="card mb-4 blog-article">
+          </div>
+          <div class="col">
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/addressalmanac.png"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/addressalmanac.png" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    <!-- make short and sweet -->
+                    A full stack address book built with ASP.NET MVC, C#, and
+                    SQL.
+                  </p>
+                  <button
+                    ty="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectTwoModal"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/techtalksjunction.png"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/techtalksjunction.png" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    <!-- make short and sweet -->
+                    A blog built using ASP.NET MVC with HTML, CSS and Bootstrap.
+                  </p>
+                  <button
+                    ty="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectThreeModal"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-page" id="challenges">
+        <h2>Smaller Projects</h2>
+        <p>
+          Coding challenges are smaller in scope and scale than my full-stack
+          projects. These problems are fun to solve and also show case some UI
+          skills and front-end dev skills with javascript. All the projects are
+          published so you can easily see my work in action. Contact me if you
+          would like to discuss any of my work.
+        </p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+          <div class="col">
+            <!-- HUNDO -->
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/hundo-logo (400 × 400 px).png"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/hundo-logo (400 × 400 px).png" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    <!-- make short and sweet -->
+                    Created a 0 to 100 generator using Javascript.
+                  </p>
+                  <a
+                    href="https://kw-hundo.netlify.app"
+                    class="btn btn-primary mt-3"
+                    target="_blank"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- FIZZBUZZ -->
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/fizzbuzz 400 x 400.png"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/fizzbuzz 400 x 400.png" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    <!-- make short and sweet -->
+                    Created the classic FizzBuzz challenge using Javascript.
+                  </p>
+                  <a
+                    href="https://kw-fizzbuzz.netlify.app"
+                    class="btn btn-primary mt-3"
+                    target="_blank"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- REWIND -->
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/rewind 200 x 200.png"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/rewind (400 × 400 px).png" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    <!-- make short and sweet -->
+                    Using Javascript, I created reverse-a-string generator with
+                    a "For" loop.
+                  </p>
+                  <a
+                    href="https://kw-rewind.netlify.app"
+                    class="btn btn-primary mt-3"
+                    target="_blank"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- TOPSPOT PALINDROME -->
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/topspot 200 x 200.png"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/topspot 400 x 400.png" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    <!-- make short and sweet -->
+                    Using Javascript, I created a palindrome checker.
+                  </p>
+                  <a
+                    href="https://kw-topspot.netlify.app"
+                    class="btn btn-primary mt-3"
+                    target="_blank"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- SUPERSTAR EVENTS -->
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/kwsuperstarevents (200 × 200 px).png"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/kwsuperstarevents (400 × 400 px).png" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    <!-- make short and sweet -->
+                    Created an events tracker using Javascript that includes
+                    saving into your storage.
+                  </p>
+                  <a
+                    href="https://kw-superstarevents.netlify.app"
+                    class="btn btn-primary mt-3"
+                    target="_blank"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- MORTGAGE CALCULATOR -->
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/mortgageloancalc (200 × 200 px).png"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/mortgageloancalc (400 × 400 px).png" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    <!-- make short and sweet -->
+                    Using Javascript, I created a mortgage loan calculator.
+                  </p>
+                  <a
+                    href="https://kw-mortgagecalculator.netlify.app"
+                    class="btn btn-primary mt-3"
+                    target="_blank"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CALL TO ACTION -->
+      <section class="section-cta">
+        <a href="#" class="cta-arrow">
+          <i class="bi bi-arrow-right-square-fill"></i>
+        </a>
+        <span>
+          Want to see what I've been working on recently?<br />
+          Check out my <a href="#">bug tracker</a>!
+        </span>
+        <a href="#" class="cta-arrow">
+          <i class="bi bi-arrow-left-square-fill"></i
+        ></a>
+      </section>
+      <section class="section-page" id="blogs">
+        <h2>Check Out My Blog</h2>
+        <p>
+          I write on my blog on a regular basis. I think it is important to
+          share your knowledge with others.
+        </p>
+        <template id="blog-template">
+          <!-- 
+<article class="card mb-4 blog-article">
                     <div class="row g-0 blog-row">
                         <div class="col-md-4 blog-header">
                             <a href="#" class="blog-image-link">
@@ -469,343 +629,616 @@
                         </div>
                     </div>
                 </article>
+
+            -->
+        </template>
+      </section>
+      <section class="section-page" id="contact">
+        <h2>Let's Connect!</h2>
+        <form method="POST" data-netlify="true" name="portfolio-contact">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <label for="FirstName" class="form-label">First Name</label>
+              <input
+                name="FirstName"
+                type="text"
+                arial-label="FirstName"
+                placeholder="First Name"
+                class="form-control"
+                required
+              />
             </div>
-        </section>
-        <section class="section-page" id="contact">
-            <h2>Let's Connect!</h2>
-                        <form method="POST" data-netlify="true" name="portfolio-contact">
-                          <div class="row">
-                            <div class="col-12 col-md-6">
-                              <label for="FirstName" class="form-label">First Name</label>
-                              <input
-                                name="FirstName"
-                                type="text"
-                                arial-label="FirstName"
-                                placeholder="First Name"
-                                class="form-control"
-                                required/>
-                            </div>
-                            <div class="col-12 col-md-6">
-                              <label for="LastName" class="form-label">Last Name</label>
-                              <input
-                                name="LastName"
-                                type="text"
-                                arial-label="LastName"
-                                placeholder="Last Name"
-                                class="form-control"
-                                required/>
-                            </div>
-                            <div class="col-12 col-md-6">
-                              <label for="Email" class="form-label">Email</label>
-                              <input
-                                name="Email"
-                                type="text"
-                                arial-label="Email"
-                                placeholder="Email"
-                                class="form-control"
-                                required
-                              />
-                            </div>
-                            <div class="col-12 col-md-6">
-                              <label for="Phone" class="form-label">Phone (optional)</label>
-                              <input
-                                name="Phone"
-                                type="tel"
-                                arial-label="Phone"
-                                placeholder="Phone"
-                                class="form-control"
-                              />
-                            </div>
-                            <div class="col-12">
-                              <label for="Subject" class="form-label">Subject</label>
-                              <input
-                                name="Subject"
-                                type="text"
-                                arial-label="Subject"
-                                placeholder="Subject"
-                                class="form-control"
-                                required
-                              />
-                            </div>
-                            <!-- Message box is different format -->
-                            <div class="col-12">
-                              <label for="Message" class="form-label">Message</label>
-                              <textarea
-                                name="Message"
-                                type="text"
-                                aria-label="Message"
-                                placeholder="Message"
-                                class="form-control"
-                                required
-                                rows="4"></textarea>
-                              <!-- row=# makes load with 4 lines of text without resizing -->
-                            </div>
-                
-                            <!-- Button -->
-                            <div class="text-end mt-2">
-                              <button type="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                            <!-- End Button -->
-                          </div>
-                        </form>
-        </section>
+            <div class="col-12 col-md-6">
+              <label for="LastName" class="form-label">Last Name</label>
+              <input
+                name="LastName"
+                type="text"
+                arial-label="LastName"
+                placeholder="Last Name"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="Email" class="form-label">Email</label>
+              <input
+                name="Email"
+                type="text"
+                arial-label="Email"
+                placeholder="Email"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="Phone" class="form-label">Phone (optional)</label>
+              <input
+                name="Phone"
+                type="tel"
+                arial-label="Phone"
+                placeholder="Phone"
+                class="form-control"
+              />
+            </div>
+            <div class="col-12">
+              <label for="Subject" class="form-label">Subject</label>
+              <input
+                name="Subject"
+                type="text"
+                arial-label="Subject"
+                placeholder="Subject"
+                class="form-control"
+                required
+              />
+            </div>
+            <!-- Message box is different format -->
+            <div class="col-12">
+              <label for="Message" class="form-label">Message</label>
+              <textarea
+                name="Message"
+                type="text"
+                aria-label="Message"
+                placeholder="Message"
+                class="form-control"
+                required
+                rows="4"
+              ></textarea>
+              <!-- row=# makes load with 4 lines of text without resizing -->
+            </div>
+
+            <!-- Button -->
+            <div class="text-end mt-2">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <!-- End Button -->
+          </div>
+        </form>
+      </section>
     </main>
 
-<!-- FOOTER -->
-<footer class="container-fluid mt-3">
-    <div class="row footer-bg-cta">
+    <textarea></textarea>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid mt-3">
+      <div class="row footer-bg-cta">
         <div class="col">
-            <div class="container py-2 footer-cta text-center">
-                <h1 class="footer-message"> Let's Work Together!</h1>
-                <h4 class="footer-message">
-                    Need something? I am open to new opportunities and ready to work with you.
-                </h4>
-            </div>
+          <div class="container py-2 footer-cta text-center">
+            <h1 class="footer-message">Let's Work Together!</h1>
+            <h4 class="footer-message">
+              Need something? I am open to new opportunities and ready to work
+              with you.
+            </h4>
+          </div>
         </div>
-    </div>
-    <div class=" footer-main py-3 row row-cols-1 row-cols-md-3 align-items-center text-center gy-3 bg-dark">
+      </div>
+      <div
+        class="footer-main py-3 row row-cols-1 row-cols-md-3 align-items-center text-center gy-3 bg-dark"
+      >
         <div class="col">
-            <img src="/img/kw-white-initials.png" height="50"/>
+          <img src="/img/kw-white-initials.png" height="50" />
         </div>
         <div class="col text-light text-md-end">
-            <a href="https://linkedin.com" class="text-light" target="blank"><i class="socialicons bi bi-linkedin p-2"></i></a>
-            <a href="https://github.com" class="text-light"target="blank"><i class="socialicons bi bi-github p-2"></i></a>
-            <a href="https://twitter.com" class="text-light"target="blank"><i class="socialicons bi bi-twitter p-2"></i></a>
+          <a href="https://linkedin.com" class="text-light" target="blank"
+            ><i class="socialicons bi bi-linkedin p-2"></i
+          ></a>
+          <a href="https://github.com" class="text-light" target="blank"
+            ><i class="socialicons bi bi-github p-2"></i
+          ></a>
+          <a href="https://twitter.com" class="text-light" target="blank"
+            ><i class="socialicons bi bi-twitter p-2"></i
+          ></a>
         </div>
-        <div class="col text-light order-md-first text-md-start"> &copy; 2023 Khala Wright</div>
-    </div>
-</footer>
-<!-- FOOTER -->
+        <div class="col text-light order-md-first text-md-start">
+          &copy; 2023 Khala Wright
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
 
-<!-- MODALS -->  
-<!-- Modal for Bug tracker -->
-  <div class="modal fade" id="projectOneModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Insecticide</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <div class="row">
+    <!-- MODALS -->
+    <!-- Modal for Bug tracker -->
+    <div
+      class="modal fade"
+      id="projectOneModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Insecticide</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
                 <div class="col-12 col-lg-5">
-                    <div id="projectOneCarousel" class="carousel slide" data-bs-theme="dark">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#projectOneCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#projectOneCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#projectOneCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#projectOneCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/img/logos/BugTracker_600.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectOneCarousel" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#projectOneCarousel" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
+                  <div
+                    id="projectOneCarousel"
+                    class="carousel slide"
+                    data-bs-theme="dark"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#projectOneCarousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectOneCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectOneCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectOneCarousel"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="/img/logos/BugTracker_600.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
                       </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/img/screenshots/BugTrackerScreen1.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/img/screenshots/BugTrackerScreen2.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/img/screenshots/BugTrackerScreen3.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#projectOneCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#projectOneCarousel"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
                 </div>
                 <div class="col-12 col-lg-7">
-                    <h3>Insecticide</h3>
-                    <p>
-                        Insecticide is a software defect tracking system. Commonly known as a bug tracker. Insectcide is built with ASP.NET, MVC, C# and SQL. A role based security system was implemented to create permission based roles. The roles of Admin , Project Manager, Developer and Submitter restrict what the user can see and do. The software allows for users to submit tickets and those tickets are tracked through status from Open to Complete.
-                    </p>
-                    <p>
-                        The system was built with C# and .Net in 3 weeks. The front end was developed with HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The database was built with SQL Server and hosted on Azure. Please visit the site and try it out.
-                    </p>
+                  <h3>Insecticide</h3>
+                  <p>
+                    Insecticide is a software defect tracking system. Commonly
+                    known as a bug tracker. Insectcide is built with ASP.NET,
+                    MVC, C# and SQL. A role based security system was
+                    implemented to create permission based roles. The roles of
+                    Admin , Project Manager, Developer and Submitter restrict
+                    what the user can see and do. The software allows for users
+                    to submit tickets and those tickets are tracked through
+                    status from Open to Complete.
+                  </p>
+                  <p>
+                    The system was built with C# and .Net in 3 weeks. The front
+                    end was developed with HTML, Javascript and Bootstrap. The
+                    back-end utlizies MVC and C#. The database was built with
+                    SQL Server and hosted on Azure. Please visit the site and
+                    try it out.
+                  </p>
                 </div>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <h4> Project Type:</h4>
-                    <span>Web Application</span>
-                </li>
-                <li class="list-group-item">
-                    <h4> Technologies:</h4>
-                    <p>C#, SQL, ASP.NET MVC, JS, CSS, Bootstrap, Postgres, HTML 5</p>
-                    <!-- replace with icons, use tool tip for hover over to indicate name with each logo -->
-                </li>  
-            </ul>                
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Visit Project</button>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- End Modal for Bug tracker -->
-<!-- Modal for Money Grow -->
-  <div class="modal fade" id="projectTwoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Money Grow</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-5">
-                    <div id="projectTwoCarousel" class="carousel slide" data-bs-theme="dark">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#projectTwoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#projectTwoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#projectTwoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#projectTwoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/img/logos/ExpenseTracker_600.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectTwoCarousel" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#projectTwoCarousel" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                </div>
-                <div class="col-12 col-lg-7">
-                    <h3>Money Grow</h3>
-                    <p>
-                        Insecticide is a software defect tracking system. Commonly known as a bug tracker. Insectcide is built with ASP.NET, MVC, C# and SQL. A role based security system was implemented to create permission based roles. The roles of Admin , Project Manager, Developer and Submitter restrict what the user can see and do. The software allows for users to submit tickets and those tickets are tracked through status from Open to Complete.
-                    </p>
-                    <p>
-                        The system was built with C# and .Net in 3 weeks. The front end was developed with HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The database was built with SQL Server and hosted on Azure. Please visit the site and try it out.
-                    </p>
-                </div>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <h4> Project Type:</h4>
-                    <span>Web Application</span>
-                </li>
-                <li class="list-group-item">
-                    <h4> Technologies:</h4>
-                    <p>C#, SQL, ASP.NET MVC, JS, CSS, Bootstrap, Postgres, HTML 5</p>
-                    <!-- replace with icons, use tool tip for hover over to indicate name with each logo -->
-                </li>  
-            </ul>                
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Visit Project</button>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- End Modal for Money Grow -->
-<!-- Modal for Blog -->
-    <div class="modal fade" id="projectThreeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Blog</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-5">
-                        <div id="projectThreeCarousel" class="carousel slide" data-bs-theme="dark">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#projectThreeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#projectThreeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#projectThreeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              <button type="button" data-bs-target="#projectThreeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="/img/logos/Blog_600.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/img/Blog/Blog_CodeTag.jpg class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/img/Blog/Blog_Database.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/img/Blog/Blog_DecisionRoad.jpg" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#projectThreeCarousel" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#projectThreeCarousel" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                    </div>
-                    <div class="col-12 col-lg-7">
-                        <h3>Blog</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla unde adipisci totam delectus quae iusto eius, cum sapiente reiciendis harum placeat, mollitia magnam et nemo quos assumenda doloremque dolorem quisquam expedita quibusdam? Animi repudiandae aperiam quo mollitia. Quod molestias ullam magni quaerat quas ipsa reiciendis ut tenetur odit qui. Itaque doloremque quaerat neque adipisci explicabo porro cupiditate possimus, cumque dolorem repellat ratione ut nemo commodi maxime voluptatum expedita dicta, vel quos aliquid provident omnis soluta inventore corporis nobis. 
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla unde adipisci totam delectus quae iusto eius, cum sapiente reiciendis harum placeat, mollitia magnam et nemo quos assumenda doloremque dolorem quisquam expedita quibusdam? Animi repudiandae aperiam quo mollitia. Quod molestias ullam magni quaerat quas ipsa reiciendis ut tenetur odit qui. 
-                        </p>
-                    </div>
                 <ul class="list-group">
-                    <li class="list-group-item">
-                        <h4> Project Type:</h4>
-                        <span>Web Application</span>
-                    </li>
-                    <li class="list-group-item">
-                        <h4> Technologies:</h4>
-                        <p>C#, SQL, ASP.NET MVC, JS, CSS, Bootstrap, Postgres, HTML 5</p>
-                        <!-- replace with icons, use tool tip for hover over to indicate name with each logo -->
-                    </li>  
-                </ul>                
-                </div>
+                  <li class="list-group-item">
+                    <h4>Project Type:</h4>
+                    <span>Web Application</span>
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Technologies:</h4>
+                    <p>
+                      C#, SQL, ASP.NET MVC, JS, CSS, Bootstrap, Postgres, HTML 5
+                    </p>
+                    <!-- replace with icons, use tool tip for hover over to indicate name with each logo -->
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Visit Project</button>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Visit Project</button>
           </div>
         </div>
       </div>
-<!-- End Modal for Blog -->
-<!-- MODALS -->
-
-
+    </div>
+    <!-- End Modal for Bug tracker -->
+    <!-- Modal for Money Grow -->
+    <div
+      class="modal fade"
+      id="projectTwoModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Money Grow</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div
+                    id="projectTwoCarousel"
+                    class="carousel slide"
+                    data-bs-theme="dark"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#projectTwoCarousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectTwoCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectTwoCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectTwoCarousel"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="/img/logos/ExpenseTracker_600.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="..." />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="..." />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="..." />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#projectTwoCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#projectTwoCarousel"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <h3>Money Grow</h3>
+                  <p>
+                    Insecticide is a software defect tracking system. Commonly
+                    known as a bug tracker. Insectcide is built with ASP.NET,
+                    MVC, C# and SQL. A role based security system was
+                    implemented to create permission based roles. The roles of
+                    Admin , Project Manager, Developer and Submitter restrict
+                    what the user can see and do. The software allows for users
+                    to submit tickets and those tickets are tracked through
+                    status from Open to Complete.
+                  </p>
+                  <p>
+                    The system was built with C# and .Net in 3 weeks. The front
+                    end was developed with HTML, Javascript and Bootstrap. The
+                    back-end utlizies MVC and C#. The database was built with
+                    SQL Server and hosted on Azure. Please visit the site and
+                    try it out.
+                  </p>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <h4>Project Type:</h4>
+                    <span>Web Application</span>
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Technologies:</h4>
+                    <p>
+                      C#, SQL, ASP.NET MVC, JS, CSS, Bootstrap, Postgres, HTML 5
+                    </p>
+                    <!-- replace with icons, use tool tip for hover over to indicate name with each logo -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Visit Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal for Money Grow -->
+    <!-- Modal for Blog -->
+    <div
+      class="modal fade"
+      id="projectThreeModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Blog</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div
+                    id="projectThreeCarousel"
+                    class="carousel slide"
+                    data-bs-theme="dark"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#projectThreeCarousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectThreeCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectThreeCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectThreeCarousel"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="/img/logos/Blog_600.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/img/Blog/Blog_CodeTag.jpg class="d-block
+                        w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/img/Blog/Blog_Database.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/img/Blog/Blog_DecisionRoad.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#projectThreeCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#projectThreeCarousel"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <h3>Blog</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla unde adipisci totam delectus quae iusto eius, cum
+                    sapiente reiciendis harum placeat, mollitia magnam et nemo
+                    quos assumenda doloremque dolorem quisquam expedita
+                    quibusdam? Animi repudiandae aperiam quo mollitia. Quod
+                    molestias ullam magni quaerat quas ipsa reiciendis ut
+                    tenetur odit qui. Itaque doloremque quaerat neque adipisci
+                    explicabo porro cupiditate possimus, cumque dolorem repellat
+                    ratione ut nemo commodi maxime voluptatum expedita dicta,
+                    vel quos aliquid provident omnis soluta inventore corporis
+                    nobis.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla unde adipisci totam delectus quae iusto eius, cum
+                    sapiente reiciendis harum placeat, mollitia magnam et nemo
+                    quos assumenda doloremque dolorem quisquam expedita
+                    quibusdam? Animi repudiandae aperiam quo mollitia. Quod
+                    molestias ullam magni quaerat quas ipsa reiciendis ut
+                    tenetur odit qui.
+                  </p>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <h4>Project Type:</h4>
+                    <span>Web Application</span>
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Technologies:</h4>
+                    <p>
+                      C#, SQL, ASP.NET MVC, JS, CSS, Bootstrap, Postgres, HTML 5
+                    </p>
+                    <!-- replace with icons, use tool tip for hover over to indicate name with each logo -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Visit Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal for Blog -->
+    <!-- MODALS -->
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

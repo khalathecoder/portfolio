@@ -7,8 +7,8 @@
 
   /* colors */
   --kw-primary-color: #aeb9b3b6;
-  --kw-secondary-color: #FAC539;
-  --kw-highlight-color: #2DE2FA;
+  --kw-secondary-color: #fac539;
+  --kw-highlight-color: #2de2fa;
   --kw-dark-color: #212121;
   --kw-light-color: #67d4cbb0;
   --kw-background-color: rgba(250, 250, 250, 0.8);
@@ -69,38 +69,42 @@ footer {
 
 /* Element Overrides */
 section {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-h6, .h6,
-h5, .h5,
-h4, .h4,
-h3, .h3,
-h2, .h2, 
-h1, .h1 {
-    font-family: var(--kw-heading-font);
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--kw-title-color);
-    letter-spacing: .1rem;
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  font-family: var(--kw-heading-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--kw-title-color);
+  letter-spacing: 0.1rem;
 }
-
-
 
 /* START NAVBAR */
 .navbar-toggler-kw {
-    color: var(--kw-toggler-color);
-    font-size: 1.5rem;
+  color: var(--kw-toggler-color);
+  font-size: 1.5rem;
 }
 
 .navbar-toggler {
-    color: var(--kw-nav-toggler-glow);
-    border-color: var(--kw-nav-toggler-color);
+  color: var(--kw-nav-toggler-glow);
+  border-color: var(--kw-nav-toggler-color);
 }
 
 #mainNav {
-    background: var(--kw-nav-bg-color);
+  background: var(--kw-nav-bg-color);
 }
 
 /* END NAVBAR */
@@ -120,130 +124,125 @@ h1, .h1 {
 }
 
 .mainHeader-cover {
-    margin-top: 76px;
-    height: 460px;
-    background-image: url(/img/cityBG_2560.png);
-    background-repeat: no-repeat;
-    background-position: right top;
+  margin-top: 76px;
+  height: 460px;
+  background-image: url(/img/cityBG_2560.png);
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 .mainHeader-cover > .mainHeader-content {
-/* > means immediate child, if its nested beyond that it wont be affected; when omitted it can affect any nested content inside*/
-    backdrop-filter: blur(2px) brightness(90%)
+  /* > means immediate child, if its nested beyond that it wont be affected; when omitted it can affect any nested content inside*/
+  backdrop-filter: blur(2px) brightness(90%);
 }
 
 .mainHeader-cover .mainTitle,
 .mainHeader-cover .subTitle {
-    color: var(--kw-light-color)
+  color: var(--kw-light-color);
 }
 
-.mainTitle, 
+.mainTitle,
 .subTitle {
-    color: var(--kw-dark-color);
-
+  color: var(--kw-dark-color);
 }
 
 .mainTitle {
-    font-family: var(--kw-title-font);
-    font-size: 2.5rem;
-    line-height: 2rem;
+  font-family: var(--kw-title-font);
+  font-size: 2.5rem;
+  line-height: 2rem;
 }
 
 .subTitle {
-    font-family: var(--kw-subtitle-font);
-    font-size: .6rem;
-    line-height: 1rem;
-    font-weight: 300;
-    letter-spacing: 0.09rem;
+  font-family: var(--kw-subtitle-font);
+  font-size: 0.6rem;
+  line-height: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.09rem;
 }
 
 .mainHeader-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .mainHeader-content {
-    height: 100%;
-    display: flex;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 /* END MAIN HEADER */
 
-
 .btn-primary {
-    --bs-btn-bg: var(--kw-secondary-color);
-    --bs-btn-border-color: var(--kw-secondary-color);
-    --bs-btn-hover-bg: var(--kw-highlight-color);
-    --bs-btn-hover-border-color: var(--kw-highlight-color);
-    --bs-btn-hover-color: var(--kw-dark-color);
-    transition: color 0.25s;
+  --bs-btn-bg: var(--kw-secondary-color);
+  --bs-btn-border-color: var(--kw-secondary-color);
+  --bs-btn-hover-bg: var(--kw-highlight-color);
+  --bs-btn-hover-border-color: var(--kw-highlight-color);
+  --bs-btn-hover-color: var(--kw-dark-color);
+  transition: color 0.25s;
 }
 
 /* BEGIN MAIN ELEMENTS */
 .section-page {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .section-page:nth-child(even) {
-    background-color: var(--kw-light-color) ;
-    
+  background-color: var(--kw-light-color);
 }
 
 .section-page:nth-child(odd) {
-    background-color: var(--kw-primary-color);
+  background-color: var(--kw-primary-color);
 }
 
 .section-page:nth-last-child(2) {
-    background-color: var(--kw-primary-color);
-    
+  background-color: var(--kw-primary-color);
 }
 
 .section-page:last-child {
-    background-color: var(--kw-light-color);
-    
+  background-color: var(--kw-light-color);
 }
 
 .profilePic {
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5)
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* END MAIN ELEMENTS */
 
 /* DEVICONS */
 #skills .colored {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .section-cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: var(--kw-dark-color);
-    color: var(--kw-light-color);
-    text-align: center;
-    font-size: .9rem;
-    line-height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--kw-dark-color);
+  color: var(--kw-light-color);
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
 }
 
 .section-cta span {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .cta-arrow {
-    color: var(--kw-highlight-color);
-    font-size: 2rem;
-    transition: .4s;
+  color: var(--kw-highlight-color);
+  font-size: 2rem;
+  transition: 0.4s;
 }
 
 .cta-arrow:hover {
-    filter: brightness(1.2);
+  filter: brightness(1.2);
 }
 
 /* START FOOTER */
@@ -262,137 +261,140 @@ h1, .h1 {
 } */
 
 .footer-cta {
-    background-color: var(--kw-secondary-color);
-    border-radius: 10px;
-    width: 75%;
+  background-color: var(--kw-secondary-color);
+  border-radius: 10px;
+  width: 75%;
 }
 
 .footer-message {
-    color: var(--kw-dark-color);
-    letter-spacing: .1rem;
+  color: var(--kw-dark-color);
+  letter-spacing: 0.1rem;
 }
 
 .footer-bg-cta {
-    background: linear-gradient(to bottom,
+  background: linear-gradient(
+    to bottom,
     var(--kw-dark-color) 0%,
     var(--kw-dark-color) 50%,
-    var(--kw-dark-color) 50%, 
-    var(--kw-dark-color) 100%);
-    
+    var(--kw-dark-color) 50%,
+    var(--kw-dark-color) 100%
+  );
 }
 
 .footer-main {
-    background-color: var(--kw-dark-color);
+  background-color: var(--kw-dark-color);
 }
 
 /* END FOOTER */
 
-.bgImage{
-    width: 100%;
-    background: linear-gradient(rgba(202, 200, 200, 0.7), rgba(180, 174, 174, 0.7)), url(/img/pexels-shonejai-2657636.jpg); 
-        /* rgba is transparency as opposed to rgb which is color*/
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed
+.bgImage {
+  width: 100%;
+  background: linear-gradient(
+      rgba(202, 200, 200, 0.7),
+      rgba(180, 174, 174, 0.7)
+    ),
+    url(/img/pexels-shonejai-2657636.jpg);
+  /* rgba is transparency as opposed to rgb which is color*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /************MEDIA QUERIES*************/
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .mainHeader{
-        background-image: url(/img/DevPortFolioBG_767.png);
-        height: 300px;
-    }
+  .mainHeader {
+    background-image: url(/img/DevPortFolioBG_767.png);
+    height: 300px;
+  }
 
-    .mainTitle {
-        font-size: .5rem;
-        line-height: 2rem;
-    }
+  .mainTitle {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
 
-    .subTitle {
-        font-size: 1.2rem;
-        letter-spacing: .1rem;
-    }
+  .subTitle {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .mainHeader {
-        background-image: url(/img/DevPortFolioBG_992.png);
-        height: 300px;
-    }
-    
-    .mainTitle {
-        font-size: .55rem;
-        line-height: 2.5rem;
-    }
+  .mainHeader {
+    background-image: url(/img/DevPortFolioBG_992.png);
+    height: 300px;
+  }
 
-    .subTitle {
-        font-size: 1.2rem;
-        letter-spacing: .1rem;
-    }
+  .mainTitle {
+    font-size: 4.5rem;
+    line-height: 3.5rem;
+  }
 
-    .section-cta {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-    }
-    .cta-arrow {
-        font-size: 2.5rem;
-    }
+  .subTitle {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .section-cta {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .cta-arrow {
+    font-size: 2.5rem;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .mainHeader{
-        height: 400px;
-        background-image: url(/img/DevPortFolioBG_1200.png);
-    }
-    .mainTitle {
-        font-size: 4.5rem;
-        line-height: 3.5rem;
-    }
+  .mainHeader {
+    height: 400px;
+    background-image: url(/img/DevPortFolioBG_1200.png);
+  }
+  .mainTitle {
+    font-size: 4.5rem;
+    line-height: 3.5rem;
+  }
 
-    .subTitle {
-        font-size: 1.2rem;
-        letter-spacing: .1rem;
-    }
+  .subTitle {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .mainHeader{
-        height: 500px;
-        background-image: url(/img/DevPortFolioBG_2560.png);
-    }
+  .mainHeader {
+    height: 500px;
+    background-image: url(/img/DevPortFolioBG_2560.png);
+  }
 
-    .mainTitle {
-        font-size: 6.5rem;
-        line-height: 5rem;
-        letter-spacing: .1rem;
-    }
+  .mainTitle {
+    font-size: 6.5rem;
+    line-height: 5rem;
+    letter-spacing: 0.1rem;
+  }
 
-    .subTitle {
-        font-size: 1.5rem;
-        letter-spacing: .1rem;
-    }
+  .subTitle {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
 
-    .section-cta {
-        font-size: 2rem;
-        line-height: 2.5rem;
-        font-weight: 300;
-    }
-    .cta-arrow {
-        font-size: 3.5rem;
-    }
+  .section-cta {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+  }
+  .cta-arrow {
+    font-size: 3.5rem;
+  }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
- 
-    /* not used currently */
-
+  /* not used currently */
 }
 
 /************ END MEDIA QUERIES*************/
