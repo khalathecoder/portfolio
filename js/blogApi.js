@@ -1,5 +1,5 @@
 function fetchBlogData() {
-  const baseUrl = "https://crucibleblog-production.up.railway.app";
+  const baseUrl = "https://techtalks.up.railway.app";
 
   fetch(`${baseUrl}/api/BlogPosts/portfolio?num=3`)
     .then((response) => response.json())
@@ -69,3 +69,21 @@ function displayBlogData(blogPosts, baseUrl) {
     blogSection.appendChild(blogPostCard);
   });
 }
+
+let blogposts = [
+  {
+    id: 0,
+    title: "string",
+    abstract: "string",
+    content: "string",
+    created: "2023-02-24",
+    updated: "2023-02-24",
+    slug: "string",
+    isDeleted: true,
+    isPublished: true,
+    imageData: "string",
+    imageType: "string",
+    imageFile: "string",
+    categoryId: 0,
+  },
+];
